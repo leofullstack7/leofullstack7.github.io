@@ -8,7 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <script>
+    if (typeof html2pdf === 'undefined') {
+        console.error("html2pdf no se cargó correctamente.");
+    } else {
+        console.log("html2pdf está listo.");
+    }
+</script>
 </head>
+
+
 <body>
     <div class="container-lg my-5">
         <div class="row shadow-lg rounded-4 overflow-hidden">
@@ -18,16 +28,16 @@
                     <!-- Fluid es responsive -->
                     <img style="height: 250px; width:auto;"
                     class="img-fluid rounded-circle border border-4 border-white mb-3" 
-                    src="./img/images.webp" 
+                    src="" 
                     alt="Foto de perfil">
 
                     <h2 class="fw-bold mb-3">LEANDRO GARCÉS SALGADO</h2>
-                    <H5 class="text-light">Desarrollador FullStack</H5>
+                    <H5 class="text-light mb-5">Desarrollador FullStack</H5>
                 </header>
                 
                 <section class="mb-4">
                     <h5 class="fw-bold">
-                        <i class="fa-solid fa-address-card me-3 mb-3"></i>Contacto
+                        <i class="fa-solid fa-address-card me-3 mb-3 mt-5"></i>Contacto
                     </h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
@@ -83,16 +93,199 @@
                         </div>
 
                     </div>
+                    <div class="skill mb-3">
+                        <div class="d-flex justify-content-between">
+                            <spn>Lenguaje de programación JAVA</span>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar"
+                            style="width: 60%"></div>
+                        </div>
+
+                    </div>
+                    <div class="skill mb-3">
+                        <div class="d-flex justify-content-between">
+                            <spn>Lenguaje de programación REACT</span>
+                            <span>20%</span>
+                        </div>
+
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar"
+                            style="width: 20%"></div>
+                        </div>
+
+                    </div>
+                    <div class="skill mb-3">
+                        <div class="d-flex justify-content-between">
+                            <spn>Lenguaje de programación C++</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar"
+                            style="width: 70%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill mb-3">
+                        <div class="d-flex justify-content-between">
+                            <spn>VENTAS</span>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar"
+                            style="width: 85%"></div>
+                        </div>
+
+                    </div>
+                    <div class="skill mb-3">
+                        <div class="d-flex justify-content-between">
+                            <spn>Fotografía y Video Corporativo (Publicidad)</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar"
+                            style="width: 80%"></div>
+                        </div>
+
+                    </div>
+                    
                 </section>
              </div>
             <!-- Columna Derecha -->
-             <div class="col-md-8">
-                
+             <div class="col-md-8 bg-light p-4">
+                <section class="mb-4">
+                    <h4 class="fw-bold text-primary mb-4">
+                        <i class="fa-solid fa-briefcase me-2"></i>
+                        Experiencia Laboral
+                    </h4>
+                    
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="fw-bold card-title">Desarrollador WordPress</h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2021 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                INDEPENDIENTE
+                            </h6>
+                            <ul class="mt-3">
+                                <li>Liderazgo en equipo</li>
+                                <li>Optimización SEO</li>
+                                <li>Eficiencia en entrega</li>
+                                <li>Posicionamiento en Google</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="fw-bold card-title">Community Manager</h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2024 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                INDEPENDIENTE
+                            </h6>
+                            <ul class="mt-3">
+                                <li>Diseño de piezas publicitarias</li>
+                                <li>Pautas publicitarias Ads Manager</li>
+                                <li>Meta Business Suite</li>
+                                <li>Estrategias de mercado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="fw-bold card-title">Productor Audiovisual</h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2024 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                INDEPENDIENTE - INNMORTAL PRODUCCIONES - HFILMS
+                            </h6>
+                            <ul class="mt-3">
+                                <li>Cubrimiento Fotográfico/Filmaker en bodas y eventos sociales</li>
+                                <li>Producción de vídeos y contenido profesional para empresas</li>
+                                <li>Edición de videos</li>
+                                <li class="mb-2">
+                                    <a href="https://www.instagram.com/innmortal_producciones?igsh=MWtxMXp2bjFjMzJiMA=="
+                                    target="_blank"
+                                    >
+                                    <i class="fa-brands fa-instagram me-2"></i>Ver referencia visual en instagram </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-4">
+                    <h4 class="fw-bold text-primary mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Educación
+                    </h4>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Aspirante a Administración de Sistemas Informáticos
+                            </h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2019 - Actualmente
+                            </h5>
+                            <h6 class="text-primary">Universidad Nacional de Colombia</h6>
+                            <ul class="mt-3">
+                                <li>Programación orientada a objetos</li>
+                                <li>Programación Web</li>
+                                <li>Gerencia de Proyectos</li>
+                                <li>Bases de datos MySQL</li>
+                                <li>Habilidades básicas en Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Tecnólogo en Análisis y Programación de Sistemas
+                            </h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2019 - 2021
+                            </h5>
+                            <h6 class="text-primary">Universidad Autónoma de Manizales</h6>
+                            <ul class="mt-3">
+                                <li>Programación orientada a objetos</li>
+                                <li>Programación Web</li>
+                            </ul>
+                        </div>
+                    </div>
              </div>
         </div>
+
+    <div class="text-center my-4">
+        <button onclick="downloadPDF()" class="btn btn-outline-primary">
+            Descargar Hoja de Vida en PDF
+        </button>
     </div>
+    </div>
+    
 
-
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- Script para PDF -->
+    <script src="https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+    <script>
+    if (typeof html2pdf === 'undefined') {
+        console.error("html2pdf no se cargó correctamente.");
+    } else {
+        console.log("html2pdf está listo.");
+    }
+
+</script>
+
 </body>
 </html>l
